@@ -5,22 +5,11 @@ import DLETTER from "../assets/dletter.png";
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between py-4 px-6 md:px-12 fixed top-0 left-0 right-0 bg-[#F5F5F5] shadow-md z-50">
-      {/* Logo on the left */}
       <div className="flex items-center">
-        <a href="#" aria-label="Home">
-          <img
-            src={DLETTER}
-            alt="logo"
-            className="mx-2"
-            width={50}
-            height={33}
-          />
-        </a>
+        <img src={DLETTER} alt="logo" className="mx-2" width={50} height={33} />
       </div>
 
-      {/* Right section: Navigation + Social Icons */}
       <div className="hidden md:flex items-center gap-6 text-lg font-semibold text-black">
-        {/* Navigation Links */}
         <a
           href="#about"
           className="hover:text-blue-500 hover:underline underline-offset-4 decoration-blue-500 transition duration-300"
@@ -45,8 +34,6 @@ const Navbar = () => {
         >
           Contact
         </a>
-
-        {/* Social Icons */}
         <div className="flex items-center gap-4 text-2xl ml-4">
           <a
             href="https://www.linkedin.com/in/rdeepan326/"
