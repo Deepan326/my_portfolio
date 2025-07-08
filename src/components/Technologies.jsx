@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { RiReactjsLine } from "react-icons/ri";
 import {
   FaCss3Alt,
@@ -10,7 +11,6 @@ import {
 import {
   SiBootstrap,
   SiExpress,
-  SiJson,
   SiJsonwebtokens,
   SiMongodb,
   SiNetlify,
@@ -18,71 +18,51 @@ import {
   SiRender,
   SiTailwindcss,
 } from "react-icons/si";
-import { FaServer } from "react-icons/fa";
+
+const iconAnimation = {
+  hidden: { scale: 0.5, opacity: 0 },
+  visible: { scale: 1, opacity: 1, transition: { duration: 0.5 } },
+};
+
 const Technologies = () => {
   return (
-    <div className="pb-24">
-      <h2 className="my-20 text-center text-4xl">Technologies</h2>
+    
+    <div className="pb-24 py-20 " id="skills">
+          <h2 className="my-20 text-center text-4xl font-bold ">Technologies</h2>
+  
+
       <div className="flex flex-wrap items-center justify-center gap-6 max-w-4xl mx-auto">
-        <div className="p-4">
-          <FaHtml5 className="text-7xl text-[#e34c26]" />
-          
-        </div>
-
-        <div className="p-4">
-          <FaCss3Alt className="text-7xl text-[#264de4]" />
-        </div>
-
-        <div className="p-4">
-          <FaJsSquare className="text-7xl text-[#f7df1e]" />
-        </div>
-
-        <div className="p-4">
-          <SiBootstrap className="text-7xl text-[#563d7c]" />
-        </div>
-
-        <div className="p-4">
-          <SiTailwindcss className="text-7xl text-[#38bdf8]" />
-        </div>
-        <div className="p-4">
-          <RiReactjsLine
-            className="text-7xl text-[#61dbfb]
-"
-          />
-        </div>
-
-        <div className="p-4">
-          <FaNodeJs className="text-7xl text-[#68a063]" />
-        </div>
-        <div className="p-4">
-          <SiExpress className="text-7xl text-white" />
-        </div>
-        <div className="p-4">
-          <SiMongodb className="text-7xl text-[#47a248]" />
-        </div>
-
-        <div className="p-4">
-          <FaGitAlt className="text-7xl text-[#f05032]" />
-        </div>
-        <div className="p-4">
-          <FaGithub className="text-7xl text-grey-400" />
-        </div>
-
-        <div className="p-4">
-          <SiJsonwebtokens className="text-7xl text-[#dd9626]" />
-        </div>
-
-        <div className="p-4">
-          <SiPostman className="text-7xl text-[#ef5b25]" />
-        </div>
-
-        <div className="p-4">
-          <SiNetlify className="text-7xl text-[#00d1b2]" />
-        </div>
-
-        <div className="p-4">
-          <SiRender className="text-7xl text-[#000]" />
-        </div>
+        {[
+          { icon: FaHtml5, color: "#e34c26" },
+          { icon: FaCss3Alt, color: "#264de4" },
+          { icon: FaJsSquare, color: "#f7df1e" },
+          { icon: SiBootstrap, color: "#563d7c" },
+          { icon: SiTailwindcss, color: "#38bdf8" },
+          { icon: RiReactjsLine, color: "#61dbfb" },
+          { icon: FaNodeJs, color: "#68a063" },
+          { icon: SiExpress, color: "#ffffff" },
+          { icon: SiMongodb, color: "#47a248" },
+          { icon: FaGitAlt, color: "#f05032" },
+          { icon: FaGithub, color: "#888888" },
+          { icon: SiJsonwebtokens, color: "#dd9626" },
+          { icon: SiPostman, color: "#ef5b25" },
+          { icon: SiNetlify, color: "#00d1b2" },
+          { icon: SiRender, color: "#000000" },
+        ].map(({ icon: Icon, color }, i) => (
+          <motion.div
+            key={i}
+            className="p-4"
+            variants={iconAnimation}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{  amount: 0.5 }}
+          >
+            <Icon
+              className="text-7xl transition-transform duration-500 hover:scale-150 hover:-translate-y-1"
+              style={{ color }}
+            />
+          </motion.div>
+        ))}
       </div>
     </div>
   );
