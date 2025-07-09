@@ -31,7 +31,7 @@ const Hero = () => {
             <span className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent mb-4">
               I'm a
               <Typewriter
-                words={[" Full Stack Developer", " Mern Stack Developer"]}
+                words={[" Full Stack Developer", " Mern Stack Developer"," Web Developer"]}
                 loop={5}
                 typeSpeed={90}
                 deleteSpeed={60}

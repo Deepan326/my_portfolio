@@ -3,32 +3,30 @@ import { PROJECTS } from '../constants'
 
 const Projects = () => {
   return (
-    <section className='py-20 bg-gray-950 text-white mt-10' id="projects">
+    <section className='py-20 px-4 bg-gray-950 text-white mt-10' id="projects">
       <h2 className='mb-12 text-center text-4xl font-bold'>Projects</h2>
 
-      <div className='space-y-16'>
+      <div className='space-y-12'>
         {PROJECTS.map((project, index) => (
           <div
             key={index}
-            className='grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-start'
+            className='bg-gray-900 rounded-xl shadow-lg overflow-hidden flex flex-col lg:flex-row lg:items-start gap-6 p-6'
           >
-            {/* Project Image */}
-            <div className="flex justify-center">
+            
+            <div className='flex justify-center lg:justify-start lg:w-1/3'>
               <img
                 src={project.image}
                 alt={project.title}
-                width={300}
-                height={300}
-                className='rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out'
+                className='w-full max-w-md rounded-md object-cover hover:scale-105 transition-transform duration-300 ease-in-out'
               />
             </div>
 
-            {/* Project Info */}
-            <div className='lg:col-span-2'>
+            
+            <div className='lg:w-2/3 flex flex-col justify-center'>
               <h3 className='text-2xl font-semibold mb-3'>{project.title}</h3>
               <p className='text-gray-400 mb-4'>{project.description}</p>
 
-              {/* Technologies */}
+             
               <div className='flex flex-wrap gap-2 mb-4'>
                 {project.technologies.map((tech, techIndex) => (
                   <span
@@ -40,7 +38,7 @@ const Projects = () => {
                 ))}
               </div>
 
-              {/* Live Demo */}
+              
               {project.Live && (
                 <a
                   href={project.Live}
