@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
-import DLETTER from "../assets/dletter.png";
+
+import D from "../assets/D.png"
+import D1 from "../assets/d-remove.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +12,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between">
         
         <div className="flex items-center">
-          <img src={DLETTER} alt="logo" className="mx-2" width={50} height={33} />
+          <img src={D1} alt="logo" className="mx-2" width={60} height={35} />
         </div>
 
         <div className="hidden md:flex items-center gap-6 text-lg font-semibold text-black">
