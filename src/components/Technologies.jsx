@@ -44,10 +44,10 @@ const Technologies = () => {
           { icon: SiMongodb, color: "#47a248" },
           { icon: FaGitAlt, color: "#f05032" },
           { icon: FaGithub, color: "#888888" },
-          { icon: SiJsonwebtokens, color: "#dd9626" },
+          // { icon: SiJsonwebtokens, color: "#dd9626" },
           { icon: SiPostman, color: "#ef5b25" },
           { icon: SiNetlify, color: "#00d1b2" },
-          { icon: SiRender, color: "#000000" },
+          { icon: SiRender, color: "#ecdedeff" },
         ].map(({ icon: Icon, color }, i) => (
           <motion.div
             key={i}

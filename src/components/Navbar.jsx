@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaLinkedin, FaGithub, FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
 
-import D from "../assets/D.png"
+
 import D1 from "../assets/d-remove.png"
 
 const Navbar = () => {
@@ -27,6 +27,13 @@ const Navbar = () => {
             className="hover:text-blue-500 hover:underline underline-offset-4 decoration-blue-500 transition duration-300"
           >
             Skills
+          </a>
+
+          <a
+            href="#experience"
+            className="hover:text-blue-500 hover:underline underline-offset-4 decoration-blue-500 transition duration-300"
+          >
+            Experience
           </a>
           <a
             href="#projects"
@@ -91,6 +98,14 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
           >
             Skills
+          </a>
+
+          <a
+            href="#experience"
+            className="hover:text-blue-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Experience
           </a>
           <a
             href="#projects"

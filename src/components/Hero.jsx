@@ -45,7 +45,7 @@ const Hero = () => {
 
             <div className="flex justify-center lg:justify-start w-full mt-4">
               <a
-                href="https://drive.google.com/file/d/1Shrkjony7Af5gnltln6VElQuf8whdfRj/view?usp=sharing"
+                href="https://drive.google.com/file/d/1zl0YZbs3HzkVrWUKS95pO_Dh9IhWtj1d/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative h-12 w-40 overflow-hidden font-bold border border-white text-white shadow-2xl transition-all 

@@ -6,74 +6,136 @@ import project5 from "../assets/project5.jpeg"
 import project6 from "../assets/project6.jpeg"
 import project7 from "../assets/project7.jpeg"
 
+import billing from "../assets/billing.jpeg"
+import Test from "../assets/Test.jpeg"
+import expense from "../assets/expense.jpeg"
 
 export const HERO_CONTENT = `Full Stack Developer with practical experience building web applications using React.js, Node.js, Express.js, and
 MongoDB. Skilled in creating responsive front-end interfaces and integrating efficient back-end services. Committed to
 writing clean, maintainable code and collaborating in team environments to deliver user-centered solutions. Currently
 enhancing skills in full-stack development through hands-on projects and continuous learning.`;
 
-export const ABOUT_TEXT = `i am dedicated`;
+export const ABOUT_TEXT = `I am a dedicated and passionate full-stack developer who enjoys turning ideas into functional web applications. With experience in both frontend and backend technologies, I strive to build efficient, secure, and scalable digital solutions that deliver real value to users.`;
 
 export const CERTIFICATES = [
-  { Institute:"WebStack Academy",
-      technologies: "Mern Stack development" ,
-    year: "2024-present", 
-}
+  {
+    Institute: "WebStack Academy",
+    technologies: "MERN Stack Development",
+    year: "Aug 2025 - Present",
+  },
 ];
 
-export const PROJECTS=[
-    {title:"Web Calculator",
-        image:project1,
-        description:"Developed a web-based calculator using HTML, CSS, and JavaScript to perform basic arithmetic operations.The calculator supports addition, subtraction, multiplication, and division, along with features like clearing input, backspace, and result evaluation.",
-        technologies:["HTML5, CSS3, JAVASCRIPT,GITHUB"],
-         Live:"https://deepan326.github.io/calculator-level-2/"
-    },
+export const EXPERIENCES = [
+  {
+    year: "Aug 2025 - Present",
+    role: "Junior Associate Engineer",
+    company: "LetNext Technologies",
+    description: `Developed and maintained web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+      Collaborated with cross-functional teams to design and implement new features based on client requirements.
+      Optimized application performance and ensured responsiveness across various devices.
+      Participated in code reviews and contributed to improving coding standards within the team.`,
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB",
+      "GitHub",
+      "Netlify",
+      "Render",
+      "postman",
+      "mySQL",
+    ],
+  },
+  {
+    year: "Nov 2024 - Nov 2025",
+    role: "Full Stack Web Development(1-Year Training)",
+    company: "WebStack Academy",
+    description: `Developed and maintained web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+      Collaborated with cross-functional teams to design and implement new features based on client requirements.
+      Optimized application performance and ensured responsiveness across various devices.
+      Participated in code reviews and contributed to improving coding standards within the team.`,
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB",
+      "GitHub",
+      "Netlify",
+      "Render",
+      "postman",
+  
+    ],
+  },
+];
 
-       {title:"Image Carousel",
-        image:project2,
-       description: "Developed an interactive image carousel using HTML, CSS, and JavaScript that allows users to navigate through images manually or automatically. The carousel includes navigation buttons, dot indicators, auto-sliding functionality, and a popup viewer for full-screen image display."
-        ,technologies:["HTML5, CSS3, JAVASCRIPT,GITHUB"],
-         Live:"https://deepan326.github.io/Image-carousel-2/"
-    },
+export const PROJECTS = [
+  {
+    title: "Billing Software",
+    image: billing,
+    description:
+      "A full-stack web application designed to simplify and automate the billing and inventory process for small and medium-sized businesses. The system replaces traditional manual record-keeping with a secure, efficient, and centralized digital platform that supports product management, invoice generation, and report analytics.",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Postman",
+      "GitHub",
+      "Netlify",
+      "Render",
+    ],
+  },
+  {
+    title: "Student Test Management System",
+    image: Test,
+    description:
+      "The Student Test Platform is a full-stack web application designed to streamline online examinations and student performance evaluation. It enables administrators and teachers to create, assign, and manage tests, while students can take assessments in real time with instant result generation. The system features secure authentication, role-based access control, and automated scoring to ensure transparency and efficiency. Built using React.js, Node.js, Express.js, and MongoDB, it delivers a fast, responsive, and scalable experience across all devices.",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Postman",
+      "GitHub",
+      "Netlify",
+      "Render",
+    ],
+  },
+  {
+    title: "Smart Expense & Investment Tracker",
+    image: expense,
+    description:
+      "The Smart Expense & Investment Tracker is a full-featured financial management platform designed to help users efficiently track their expenses, manage income, and monitor investments in real time. It combines powerful analytics, intuitive UI, and secure cloud deployment to deliver a seamless financial experience for individuals and organizations alike. Built with the MERN stack and deployed on Render, it provides real-time insights, dashboards, and secure authentication through JWT.",
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Postman",
+      "GitHub",
+      "Netlify",
+      "Render",
+    ],
+  },
+];
 
-       {title:"Music Player",
-        image:project3,
-        description:"This JavaScript-based music player allows users to play, pause, skip,shuffle, and loop tracks. It features a dynamic playlist, progress bar,volume control, and a modal preview with artist details.",
-        technologies:["HTML5, CSS3,JAVASCRIPT,GITHUB"],
-         Live:"https://deepan326.github.io/music-player-level-2/"
-    },
-
-       {title:"Weather App",
-        image:project4,
-        description:"Developed a responsive, location-aware weather forecast application using React and the Open-Meteo weather API. The app fetches and displays both hourly and daily weather data based on the user's geolocation or manual search input",
-        technologies:["HTML5, CSS3,JAVASCRIPT,REACT"],
-         Live:"https://wsa-weatherapp2.netlify.app/"
-    },
-
-       {title:"Todo App-(Fullstack project)",
-        image:project5,
-        description:"This is a simple and responsive To-Do list application built using React and Vite. The primary goal is to allow users to create, view, edit, and delete tasks with a focus on clean UI and intuitive UX.",
-        technologies:["HTML5, CSS3, JAVASCRIPT, REACT, NODE, EXPRESS, MONGODB,POSTMAN, GITHUB, NETLIFY, RENDER"],
-         Live:"https://wsa-todo-level-1.netlify.app/"
-    },
-
-       {title:"Password Tester",
-        image:project6,
-        description:"This project is a simple and interactive Password Strength Tester built using React. It allows users to enter a password and visually evaluates its strength based on criteria.The strength is displayed via a range slider (progress bar-like), and visual feedback is given for each criterion",
-        technologies:["HTML5, CSS3, JAVASCRIPT, REACT, GITHUB, NETLIFY"],
-         Live:"https://password-tester-app.netlify.app/"
-    },
-
-       {title:"Simple Ecommerce Cart)",
-        image:project7,
-        description:"This project is a mini e-commerce frontend built using React. It enables users to browse, filter, search, and add products to a shopping cart. The cart is persisted using localStorage and dynamically updates across components using window events",
-        technologies:["HTML5,CSS3,JAVASCRIPT,REACT,GITHUB,NETLIFY "],
-         Live:"https://ecom-simple-cart.netlify.app/"
-    }
-]
-
-export const CONTACT={
-    address:"7/113 south garden,jadayampalayam(post),Coimbatore-641302",
-    MailId:"rdeepan326@gmail.com",
-    Contact:"+91 8248405321"
-}
+export const CONTACT = {
+  address: "7/113 South Garden, Jadayampalayam (Post), Coimbatore - 641302",
+  MailId: "rdeepan326@gmail.com",
+  Contact: "+91 8248405321",
+};
