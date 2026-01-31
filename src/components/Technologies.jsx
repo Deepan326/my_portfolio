@@ -27,7 +27,7 @@ const iconAnimation = {
 const Technologies = () => {
   return (
     
-    <div className="pb-24 py-20 " id="skills">
+    <div className=" py-6 " id="skills">
           <h2 className="my-20 text-center text-4xl font-bold ">Technologies</h2>
   
 

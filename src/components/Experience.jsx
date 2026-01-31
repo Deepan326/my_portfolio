@@ -3,8 +3,8 @@ import { EXPERIENCES } from '../constants'
 
 const Experience = () => {
   return (
-    <div className='pb-4' id="experience">
-      <h2 className='my-20 text-center text-4xl font-bold'>Experience</h2>
+    <div className='pb-4 py-4' id="experience">
+      <h2 className='my-20  text-center text-4xl font-bold'>Experience</h2>
       <div>
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className='mb-8 flex flex-wrap lg:justify-center'>
@@ -19,9 +19,9 @@ const Experience = () => {
             {/* Right Section - Details */}
             <div className='w-full max-w-xl lg:w-3/4'>
               <h3 className='mb-2 font-semibold text-lg'>
-                {experience.role}{" "}
+                {experience.company}{" "}
                 <span className='text-sm text-stone-500'>
-                  – {experience.company}
+                  – {experience.role}
                 </span>
               </h3>
 

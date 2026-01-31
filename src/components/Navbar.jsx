@@ -35,6 +35,12 @@ const Navbar = () => {
           >
             Experience
           </a>
+             <a
+            href="#certificate"
+            className="hover:text-blue-500 hover:underline underline-offset-4 decoration-blue-500 transition duration-300"
+          >
+            Certificate
+          </a>
           <a
             href="#projects"
             className="hover:text-blue-500 hover:underline underline-offset-4 decoration-blue-500 transition duration-300"
@@ -102,6 +108,13 @@ const Navbar = () => {
 
           <a
             href="#experience"
+            className="hover:text-blue-500"
+            onClick={() => setIsOpen(false)}
+          >
+            Experience
+          </a>
+           <a
+            href="#certificate"
             className="hover:text-blue-500"
             onClick={() => setIsOpen(false)}
           >

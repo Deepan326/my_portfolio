@@ -9,6 +9,7 @@ import project7 from "../assets/project7.jpeg"
 import billing from "../assets/billing.jpeg"
 import Test from "../assets/Test.jpeg"
 import expense from "../assets/expense.jpeg"
+import Certificate from "../assets/Certificate.png"
 
 export const HERO_CONTENT = `Full Stack Developer with practical experience building web applications using React.js, Node.js, Express.js, and
 MongoDB. Skilled in creating responsive front-end interfaces and integrating efficient back-end services. Committed to
@@ -17,18 +18,18 @@ enhancing skills in full-stack development through hands-on projects and continu
 
 export const ABOUT_TEXT = `I am a dedicated and passionate full-stack developer who enjoys turning ideas into functional web applications. With experience in both frontend and backend technologies, I strive to build efficient, secure, and scalable digital solutions that deliver real value to users.`;
 
-export const CERTIFICATES = [
-  {
-    Institute: "WebStack Academy",
-    technologies: "MERN Stack Development",
-    year: "Aug 2025 - Present",
-  },
-];
+// export const CERTIFICATES = [
+//   {
+//     Institute: "WebStack Academy",
+//     technologies: "MERN Stack Development",
+//     year: "Aug 2025 - Present",
+//   },
+// ];
 
 export const EXPERIENCES = [
   {
-    year: "Aug 2025 - Present ",
-    role: "Junior Associate Engineer",
+    year: "Aug 2025 - Nov 2025 ",
+    role: "Junior Associate Engineer - Intern",
     company: "LetNext Technologies",
     description: `Developed and maintained web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
       Collaborated with cross-functional teams to design and implement new features based on client requirements.
@@ -46,7 +47,28 @@ export const EXPERIENCES = [
       "Netlify",
       "Render",
       "postman",
-      "mySQL",
+    ],
+  },
+  {
+    year: "Dec 2025 - Present ",
+    role: "Junior Fullstack Developer  - Intern",
+    company: "LVC Solutions",
+    description: `During my time at LVC Solutions under the LVC 360 Career Program, I gained hands-on experience in front-end development by working on responsive web applications. I was responsible for improving layout alignment, implementing responsive designs for multiple screen sizes, and developing new features to enhance functionality. This experience strengthened my understanding of UI/UX principles, teamwork, and real-world application development.`,
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Typescript",
+      "React",
+      "Node",
+      "Next.js",
+      "Tailwind",
+      "Express",
+      "MongoDB",
+      "GitHub",
+      "Netlify",
+      "Render",
+      "postman",
     ],
   },
   // {
@@ -133,6 +155,34 @@ export const PROJECTS = [
     ],
   },
 ];
+
+
+export const CERTIFICATES = [
+  {
+    title: "WebStack Academy - Fullstack Web Development",
+    year: "Nov 2024 - Oct 2025",
+    image: Certificate,
+     description: `Developed and maintained web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+      Collaborated with cross-functional teams to design and implement new features based on client requirements.
+      Optimized application performance and ensured responsiveness across various devices.
+      Participated in code reviews and contributed to improving coding standards within the team.`,
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Java",
+      "DSA",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Postman",
+      "GitHub",
+      "Netlify",
+      "Render",
+    ],
+  }
+]
 
 export const CONTACT = {
   address: "7/113 South Garden, Jadayampalayam (Post), Coimbatore - 641302",
