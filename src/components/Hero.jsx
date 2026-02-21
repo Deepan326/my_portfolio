@@ -31,7 +31,7 @@ const Hero = () => {
             <span className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent mb-4">
               I'm a
               <Typewriter
-                words={[" Full Stack Developer", " Mern Stack Developer"," Web Developer"]}
+                words={[" Full Stack Developer","Frontend Developer"," Mern Stack Developer"," Web Developer"]}
                 loop={5}
                 typeSpeed={90}
                 deleteSpeed={60}
@@ -45,7 +45,7 @@ const Hero = () => {
 
             <div className="flex justify-center lg:justify-start w-full mt-4">
               <a
-                href="https://drive.google.com/file/d/11l45zhot8EWdRA-PhMbP-AjvUJT9Xl2j/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1B8xIF7hhg6CcLnuGrOjhxDkJiVj_YkAm/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative h-12 w-40 overflow-hidden font-bold border border-white text-white shadow-2xl transition-all 

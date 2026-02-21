@@ -27,28 +27,7 @@ export const ABOUT_TEXT = `I am a dedicated and passionate full-stack developer 
 // ];
 
 export const EXPERIENCES = [
-  {
-    year: "Aug 2025 - Nov 2025 ",
-    role: "Junior Associate Engineer - Intern",
-    company: "LetNext Technologies",
-    description: `Developed and maintained web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
-      Collaborated with cross-functional teams to design and implement new features based on client requirements.
-      Optimized application performance and ensured responsiveness across various devices.
-      Participated in code reviews and contributed to improving coding standards within the team.`,
-    technologies: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "React",
-      "Node",
-      "Express",
-      "MongoDB",
-      "GitHub",
-      "Netlify",
-      "Render",
-      "postman",
-    ],
-  },
+  
   {
     year: "Dec 2025 - Present ",
     role: "Junior Fullstack Developer  - Intern",
@@ -70,7 +49,32 @@ export const EXPERIENCES = [
       "Render",
       "postman",
     ],
+    
   },
+{
+    year: "Aug 2025 - Nov 2025 ",
+    role: "Junior Associate Engineer - Intern",
+    company: "LetNext Technologies",
+    description: `Developed and maintained web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js).
+      Collaborated with cross-functional teams to design and implement new features based on client requirements.
+      Optimized application performance and ensured responsiveness across various devices.
+      Participated in code reviews and contributed to improving coding standards within the team.`,
+    technologies: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Node",
+      "Express",
+      "MongoDB",
+      "GitHub",
+      "Netlify",
+      "Render",
+      "postman",
+    ],
+  },
+
+
   // {
   //   year: "Nov 2024 - Nov 2025 (Online)",
   //   role: "Full Stack Web Development(Training Program)",

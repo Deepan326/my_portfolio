@@ -7,6 +7,7 @@ import {
   FaHtml5,
   FaJsSquare,
   FaNodeJs,
+  
 } from "react-icons/fa";
 import {
   SiBootstrap,
@@ -17,6 +18,7 @@ import {
   SiPostman,
   SiRender,
   SiTailwindcss,
+  SiNextdotjs,
 } from "react-icons/si";
 
 const iconAnimation = {
@@ -44,8 +46,9 @@ const Technologies = () => {
           { icon: SiMongodb, color: "#47a248" },
           { icon: FaGitAlt, color: "#f05032" },
           { icon: FaGithub, color: "#888888" },
-          // { icon: SiJsonwebtokens, color: "#dd9626" },
+          { icon: SiJsonwebtokens, color: "#dd9626" },
           { icon: SiPostman, color: "#ef5b25" },
+          { icon: SiNextdotjs, color: "#f6eded" },
           { icon: SiNetlify, color: "#00d1b2" },
           { icon: SiRender, color: "#ecdedeff" },
         ].map(({ icon: Icon, color }, i) => (
